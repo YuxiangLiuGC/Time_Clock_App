@@ -1,0 +1,19 @@
+{
+    timepicker-blockid=
+        {
+          timepicker-actionid=
+              ViewState.Value(type=timepicker, value=null, selectedDate=null, selectedTime=00:22, selectedDateTime=null, selectedConversation=null, selectedChannel=null, selectedUser=null, selectedOption=null, selectedConversations=null, selectedChannels=null, selectedUsers=null, selectedOptions=null, timezone=null)
+        },
+    select-where-blockid=
+        {
+          select-where-actionid=
+              ViewState.Value(type=static_select, value=null, selectedDate=null, selectedTime=null, selectedDateTime=null, selectedConversation=null, selectedChannel=null, selectedUser=null, selectedOption=ViewState.SelectedOption(text=PlainTextObject(type=plain_text, text=Remotely, emoji=true), value=remotely), selectedConversations=null, selectedChannels=null, selectedUsers=null, selectedOptions=null, timezone=null)
+        },
+    working-on-input-blockid=
+        {
+          working-on-input-actionid=
+              ViewState.Value(type=plain_text_input, value=clocksummary app, selectedDate=null, selectedTime=null, selectedDateTime=null, selectedConversation=null, selectedChannel=null, selectedUser=null, selectedOption=null, selectedConversations=null, selectedChannels=null, selectedUsers=null, selectedOptions=null, timezone=null)
+        }
+}
+
+{clock-in-timepicker-blockid={clock-in-timepicker-actionid=ViewState.Value(type=timepicker, value=null, selectedDate=null, selectedTime=04:00, selectedDateTime=null, selectedConversation=null, selectedChannel=null, selectedUser=null, selectedOption=null, selectedConversations=null, selectedChannels=null, selectedUsers=null, selectedOptions=null, timezone=null)}, company-blockid={company-actionid=ViewState.Value(type=static_select, value=null, selectedDate=null, selectedTime=null, selectedDateTime=null, selectedConversation=null, selectedChannel=null, selectedUser=null, selectedOption=ViewState.SelectedOption(text=PlainTextObject(type=plain_text, text=EpiBuild, emoji=true), value=EpiBuild), selectedConversations=null, selectedChannels=null, selectedUsers=null, selectedOptions=null, timezone=null)}, what-for-blockid={what-for-actionid=ViewState.Value(type=static_select, value=null, selectedDate=null, selectedTime=null, selectedDateTime=null, selectedConversation=null, selectedChannel=null, selectedUser=null, selectedOption=ViewState.SelectedOption(text=PlainTextObject(type=plain_text, text=App Project, emoji=true), value=App Project), selectedConversations=null, selectedChannels=null, selectedUsers=null, selectedOptions=null, timezone=null)}, select-where-blockid={select-where-actionid=ViewState.Value(type=static_select, value=null, selectedDate=null, selectedTime=null, selectedDateTime=null, selectedConversation=null, selectedChannel=null, selectedUser=null, selectedOption=ViewState.SelectedOption(text=PlainTextObject(type=plain_text, text=Remotely, emoji=true), value=remotely), selectedConversations=null, selectedChannels=null, selectedUsers=null, selectedOptions=null, timezone=null)}, working-on-input-blockid={working-on-input-actionid=ViewState.Value(type=plain_text_input, value=Clocksummary app, selectedDate=null, selectedTime=null, selectedDateTime=null, selectedConversation=null, selectedChannel=null, selectedUser=null, selectedOption=null, selectedConversations=null, selectedChannels=null, selectedUsers=null, selectedOptions=null, timezone=null)}}

@@ -1,0 +1,27 @@
+{
+  "type": "modal",
+  "callback_id": "update-callbackid",
+  "notify_on_close": true,
+  "title": {
+    "type": "plain_text",
+    "text": "Update Service"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Submit"
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Cancel"
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "plain_text",
+        "text": "Are you sure you want to update changes made in the RECORDS Google sheet to database?",
+        "emoji": true
+      }
+    }
+  ]
+}

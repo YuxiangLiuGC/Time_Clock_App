@@ -1,0 +1,57 @@
+{
+  "type": "modal",
+  "callback_id": "clock-out-callbackid",
+  "notify_on_close": true,
+  "title": {
+    "type": "plain_text",
+    "text": "Clocking out"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Submit"
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Cancel"
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "block_id": "clock-out-timepicker-blockid",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Enter the time you clock out (MST):"
+      },
+      "accessory": {
+        "type": "timepicker",
+        "action_id": "clock-out-timepicker-actionid",
+        "initial_time": "00:00",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Enter time"
+        }
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "plain_text",
+        "text": "(For each project type, you must clock in and out separately)",
+        "emoji": true
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "what-you-did-input-blockid",
+      "element": {
+        "type": "plain_text_input",
+        "multiline": true,
+        "action_id": "what-you-did-input-actionid"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "What did you work on today?"
+      }
+    }
+  ]
+}

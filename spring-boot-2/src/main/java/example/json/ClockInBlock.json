@@ -1,0 +1,204 @@
+{
+  "type": "modal",
+  "callback_id": "clock-in-callbackid",
+  "notify_on_close": true,
+  "title": {
+    "type": "plain_text",
+    "text": "Clocking in"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Submit"
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Cancel"
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "block_id": "clock-in-timepicker-blockid",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Enter the time you clock in (MST):"
+      },
+      "accessory": {
+        "type": "timepicker",
+        "action_id": "clock-in-timepicker-actionid",
+        "initial_time": "11:40",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Enter time"
+        }
+      }
+    },
+    {
+      "type": "section",
+      "block_id": "company-blockid",
+      "text": {
+        "type": "mrkdwn",
+        "text": "What company is this for?"
+      },
+      "accessory": {
+        "type": "static_select",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select a company",
+          "emoji": true
+        },
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "EpiBuild",
+              "emoji": true
+            },
+            "value": "EpiBuild"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "EpiFinder",
+              "emoji": true
+            },
+            "value": "EpiFinder"
+          }
+        ],
+        "action_id": "company-actionid"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "What is this for?"
+      },
+      "block_id": "what-for-blockid",
+      "accessory": {
+        "type": "static_select",
+        "action_id": "what-for-actionid",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select an option"
+        },
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Training - P/E/M Section"
+            },
+            "value": "Training - P/E/M Section"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Training - Research"
+            },
+            "value": "Training - Research"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "HR Duty"
+            },
+            "value": "HR Duty"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Marketing Duty"
+            },
+            "value": "Marketing Duty"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Sales Duty"
+            },
+            "value": "Sales Duty"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Management"
+            },
+            "value": "Management"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "App Project"
+            },
+            "value": "App Project"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Website Project"
+            },
+            "value": "Website Project"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Marketing Project"
+            },
+            "value": "Marketing Project"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Legal Research Project"
+            },
+            "value": "Legal Research Project"
+          }
+        ]
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Where will you be working at?"
+      },
+      "block_id": "select-where-blockid",
+      "accessory": {
+        "type": "static_select",
+        "action_id": "select-where-actionid",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select an option"
+        },
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Remotely"
+            },
+            "value": "remotely"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "In the office"
+            },
+            "value": "in the office"
+          }
+        ]
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "working-on-input-blockid",
+      "element": {
+        "type": "plain_text_input",
+        "multiline": true,
+        "action_id": "working-on-input-actionid"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "What will you be working on?"
+      }
+    }
+  ]
+}

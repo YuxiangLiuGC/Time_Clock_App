@@ -1,0 +1,61 @@
+{
+  "type": "modal",
+  "callback_id": "record-callbackid",
+  "notify_on_close": true,
+  "title": {
+    "type": "plain_text",
+    "text": "Previous Record"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Submit"
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Cancel"
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "!!!!!!!"
+      },
+      "accessory": {
+        "type": "static_select",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select Action",
+          "emoji": true
+        },
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Delete",
+              "emoji": true
+            },
+            "value": "value-0"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Keep",
+              "emoji": true
+            },
+            "value": "value-1"
+          }
+        ],
+        "action_id": "static_select-action"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "plain_text",
+        "text": "(Retrieve last clock-in or clock-out record in 24 hours ago)",
+        "emoji": true
+      }
+    }
+  ]
+}

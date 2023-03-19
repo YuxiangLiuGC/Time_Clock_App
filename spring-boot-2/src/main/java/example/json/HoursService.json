@@ -1,0 +1,63 @@
+{
+  "type": "modal",
+  "callback_id": "hours-callbackid",
+  "notify_on_close": true,
+  "title": {
+    "type": "plain_text",
+    "text": "Hours Service"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Submit"
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Cancel"
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "block_id": "start-date-blockid",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Pick a starting date:"
+      },
+      "accessory": {
+        "type": "datepicker",
+        "initial_date": "2023-01-01",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select a date",
+          "emoji": true
+        },
+        "action_id": "start-date-actionid"
+      }
+    },
+    {
+      "type": "section",
+      "block_id": "end-date-blockid",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Pick a ending date"
+      },
+      "accessory": {
+        "type": "datepicker",
+        "initial_date": "2023-01-01",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select a date",
+          "emoji": true
+        },
+        "action_id": "end-date-actionid"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "plain_text",
+        "text": "(Calculate hours for every staff who has records in this time period)",
+        "emoji": true
+      }
+    }
+  ]
+}
