@@ -1,5 +1,5 @@
 # Overview:
-This is a Spring boot web application written in Java, eventually will be running on web server. The database should be configured on the server as well. Reverse proxy is required in order to expose the server to the Internet. Users can interact with the app by slash command in a Slack channel and all the clock-in and clock-out records are stored in the database. The records and staff’s hours can be requested and presented in a google sheet.
+Time Clock a Spring boot web application written in Java, eventually will be running on web server. The database should be configured on the server as well. Reverse proxy is required in order to expose the server to the Internet. Users can interact with the app by slash command in a Slack channel and all the clock-in and clock-out records are stored in the database. The records and staff’s hours can be requested and presented in a google sheet.
 ## User Manual
 
 ### Clock In 
